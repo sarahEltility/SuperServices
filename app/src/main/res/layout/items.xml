@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/list_row_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        >
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+                    <ImageView
+                        android:id="@+id/image_item"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:src="@mipmap/ic_launcher" />
+
+            <TextView
+                    android:id="@+id/fullname_item"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="Mahmoud Ashraf"
+                android:singleLine="true"
+                android:layout_alignBottom="@+id/image_item"
+                android:layout_toRightOf="@+id/image_item"
+                android:layout_toEndOf="@+id/image_item"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="11dp" />
+
+            <Button
+                android:text="Unfollow"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:background="@drawable/unfollow_rounded"
+                android:textColor="#e8584b"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:textAllCaps="false"
+
+                android:id="@+id/button_in_card_view"
+
+                android:layout_marginRight="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_alignBottom="@+id/fullname_item"
+                android:layout_toLeftOf="@+id/button_in_card_view"
+                android:layout_toStartOf="@+id/button_in_card_view"
+                android:layout_marginRight="11dp"
+                android:layout_marginEnd="11dp">
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:id="@+id/route_btn_in_following_activity"
+                    android:src="@drawable/common_full_open_on_phone"
+                    android:tint="#69f0ae"
+                    android:layout_marginRight="10dp"
+                    />
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:id="@+id/history_btn_in_following_activity"
+                    android:src="@drawable/common_full_open_on_phone"
+                    android:tint="#69f0ae"
+                    android:layout_marginRight="10dp"
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/map_btn_in_following_activity"
+                    android:src="@drawable/common_full_open_on_phone"
+                    android:tint="#69f0ae"
+                    />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

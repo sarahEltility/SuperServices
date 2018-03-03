@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/content_user_name"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:layout_alignParentTop="true"
+android:layout_centerHorizontal="true"
+tools:context="com.example.a3zzoz.itracker.StartPage.register.RegisterActivityies.UserNameActivity"
+tools:showIn="@layout/activity_user_name">
+
+<TextView
+    android:text="User name"
+    android:textSize="35dp"
+    android:textColor="#68efad"
+    android:gravity="center"
+    android:layout_width="wrap_content"
+    android:layout_height="41dp"
+    android:id="@+id/textView_user_name"
+    tools:layout_constraintTop_creator="1"
+    app:layout_constraintRight_toRightOf="parent"
+    android:layout_marginTop="96dp"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintLeft_toLeftOf="parent"
+    tools:layout_constraintRight_creator="1"
+    tools:layout_constraintLeft_creator="1" />
+
+<EditText
+    android:id="@+id/username_edit_text_username"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textCursorDrawable="@null"
+    android:textColor="#68efad"
+    android:background="@android:color/transparent"
+    android:gravity="center_vertical"
+    android:hint="Enter your user name"
+    android:textSize="28sp"
+    android:textColorHint="#c5c5c5"
+    android:inputType="text"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    tools:layout_constraintTop_creator="1"
+    tools:layout_constraintRight_creator="1"
+    tools:layout_constraintBottom_creator="1"
+    app:layout_constraintBottom_toBottomOf="parent"
+    tools:layout_constraintLeft_creator="1"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.4" />
+
+<View
+    android:layout_width="0dp"
+    android:layout_height="1dp"
+    android:background="#68efad"
+    android:id="@+id/view"
+    tools:layout_constraintRight_creator="1"
+    tools:layout_constraintBottom_creator="1"
+    android:layout_marginStart="24dp"
+    app:layout_constraintBottom_toBottomOf="@+id/username_edit_text_username"
+    android:layout_marginEnd="24dp"
+    app:layout_constraintRight_toRightOf="parent"
+    tools:layout_constraintLeft_creator="1"
+    app:layout_constraintLeft_toLeftOf="parent"
+    android:layout_marginLeft="24dp"
+    android:layout_marginRight="24dp" />
+
+<Button
+    android:text="Next"
+    android:layout_width="180dp"
+    android:layout_height="wrap_content"
+    android:id="@+id/next_button_username_activity"
+    android:background="@drawable/roundedbutton"
+    android:textColor="#ffffff"
+    android:textSize="25sp"
+    android:textStyle="normal"
+    android:textAllCaps="false"
+    tools:layout_constraintTop_creator="1"
+    tools:layout_constraintRight_creator="1"
+    app:layout_constraintRight_toRightOf="parent"
+    android:layout_marginTop="56dp"
+    app:layout_constraintTop_toBottomOf="@+id/view"
+    tools:layout_constraintLeft_creator="1"
+    app:layout_constraintLeft_toLeftOf="parent" />
+
+<TextView
+    android:text="step 4 of 5"
+    android:layout_width="wrap_content"
+    android:layout_height="24dp"
+    android:id="@+id/textView_step4"
+    android:textSize="20sp"
+    android:textColor="#989898"
+    tools:layout_constraintRight_creator="1"
+    tools:layout_constraintBottom_creator="1"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    tools:layout_constraintLeft_creator="1"
+    android:layout_marginBottom="97dp"
+    app:layout_constraintLeft_toLeftOf="parent"
+    android:layout_marginTop="16dp"
+    app:layout_constraintTop_toBottomOf="@+id/next_button_username_activity" />
+
+
+
+
+
+
+
+</android.support.constraint.ConstraintLayout>
+

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/list_row_container_receive_request"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        >
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/image_item_receive_request"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:src="@mipmap/ic_launcher" />
+
+            <TextView
+                android:id="@+id/fullname_item_receive_request"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mahmoud Ashraf"
+                android:layout_marginLeft="9dp"
+                android:layout_marginStart="9dp"
+                android:layout_alignBottom="@+id/button_in_card_view_receive_request"
+                android:layout_toRightOf="@+id/image_item_receive_request"
+                android:layout_toEndOf="@+id/image_item_receive_request" />
+
+            <TextView
+                android:text="X"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textSize="25dp"
+                android:textColor="#b5b5b5"
+
+                android:layout_alignParentEnd="true"
+              android:background="@null"
+                android:id="@+id/button_in_card_view_receive_request_canel" />
+
+            <Button
+                android:text="Confirm"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:background="@drawable/common_full_open_on_phone"
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="12sp"
+                android:textStyle="normal"
+                android:textAllCaps="false"
+
+                android:id="@+id/button_in_card_view_receive_request"
+
+                android:layout_marginRight="21dp"
+                android:layout_marginEnd="21dp"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/button_in_card_view_receive_request_canel"
+                android:layout_toStartOf="@+id/button_in_card_view_receive_request_canel" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
